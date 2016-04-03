@@ -1,0 +1,25 @@
+{
+  "name": "slackbot-hwz",
+  "version": "1.0.0",
+  "description": "A slackbot which monitor the HWZ EDMW forum.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slack",
+    "bot",
+    "hwz",
+    "edmw",
+    "scraper"
+  ],
+  "author": "eterna2 <eterna2@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "elasticsearch": "^10.1.3",
+    "hapi": "^13.2.2",
+    "request": "^2.69.0",
+    "slack": "^6.1.0"
+  }
+}

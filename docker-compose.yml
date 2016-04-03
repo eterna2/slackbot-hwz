@@ -1,0 +1,16 @@
+version: '2'
+services:
+  es:
+    container_name: es
+    image: elasticsearch:2.3
+    volumes:
+      - ./data:/usr/share/elasticsearch/data
+  slackbot:
+    container_name: slackbot
+    build: .
+    ports:
+     - "8879:8879"
+    env_file: .env
+    volumes:
+      - ./index.js:/home/slackbot/index.js
+      - ./edmw.js:/home/slackbot/edmw.js
