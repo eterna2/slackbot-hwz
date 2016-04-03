@@ -1,7 +1,7 @@
 version: '2'
 services:
-  es:
-    container_name: es
+  es2:
+    container_name: es2
     image: elasticsearch:2.3
     volumes:
       - ./data:/usr/share/elasticsearch/data

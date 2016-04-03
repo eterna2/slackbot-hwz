@@ -6,7 +6,6 @@ const slack = require('slack'),
   tag = '<@'+process.env.SLACK_BOT+'>';
  
 initBot(process.env.SLACK_BOT_TOKEN);
-initHapi(parseInt(process.env.SLACK_HOOK_PORT),process.env.SLACK_HOOK_TOKEN);
 
 // create a bot 
 function initBot(token){
